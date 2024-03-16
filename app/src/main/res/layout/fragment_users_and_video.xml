@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.FragmentUsersAndVideo">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/id_fragment_1_rv"
+        tools:listitem="@layout/item_user_in_list"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_fragment_1_cs_buttons"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:id="@+id/id_fragment_1_webview"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/id_fragment_1_cs_buttons"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#4b4d4a"
+        android:id="@+id/id_fragment_1_cs_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="users"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            style="@style/ButtonStyleUsersAndVideo"
+            app:layout_constraintHeight_percent="0.7"
+            app:layout_constraintWidth_percent="0.4"
+            app:layout_constraintEnd_toStartOf="@id/id_fragment_1_cs_buttons_button_video"
+            android:id="@+id/id_fragment_1_cs_buttons_button_users"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="video"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            style="@style/ButtonStyleUsersAndVideo"
+            app:layout_constraintStart_toEndOf="@id/id_fragment_1_cs_buttons_button_users"
+            app:layout_constraintHeight_percent="0.7"
+            app:layout_constraintWidth_percent="0.4"
+            android:id="@+id/id_fragment_1_cs_buttons_button_video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
