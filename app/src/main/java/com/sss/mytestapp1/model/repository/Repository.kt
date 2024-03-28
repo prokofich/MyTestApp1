@@ -6,6 +6,7 @@ import retrofit2.Response
 
 class Repository {
 
+    // асинхронная функция запроса на получение списка пользователей
     suspend fun getUsersFromServer(): Response<User> {
         return RetrofitInstance.api.getUsersFromServer()
     }

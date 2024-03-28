@@ -6,6 +6,7 @@ import retrofit2.http.GET
 
 interface ApiService {
 
+    // асинхронная функция запроса списка пользователей
     @GET("users")
     suspend fun getUsersFromServer(): Response<User>
 

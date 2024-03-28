@@ -73,12 +73,14 @@ class FragmentUsersAndVideo : Fragment(),InterfaceForUsersAdapter {
         binding = null
     }
 
+    // переход на фрагмент с показом полной информации пользователя
     override fun showFullDescription(user: UserItem) {
         val bundle = Bundle()
         bundle.putParcelable("key",user)
         MAIN?.navController?.navigate(R.id.action_fragmentUsersAndVideo_to_fragmentUser,bundle)
     }
 
+    // загрузка страницы с видео в WebView
     private fun showVideo(){
         binding?.idFragment1Webview?.loadUrl("https://www.youtube.com/watch?v=QKWAvLeayec&ab_channel=MARGO")
     }
