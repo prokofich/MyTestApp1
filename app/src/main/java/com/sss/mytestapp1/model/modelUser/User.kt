@@ -4,4 +4,4 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-class User : ArrayList<UserItem>(),Parcelable
+class User : ArrayList<UserItem>(), Parcelable

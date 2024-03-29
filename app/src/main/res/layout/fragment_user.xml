@@ -25,7 +25,6 @@
             android:textStyle="italic|bold"
             android:textSize="30sp"
             android:textColor="#4b4d4a"
-            android:text="Prokofiew Nikita"
             app:layout_constraintWidth_percent="0.9"
             app:layout_constraintHeight_percent="0.3"
             android:id="@+id/id_fragment_2_tv_name"
@@ -41,7 +40,6 @@
             android:textStyle="italic|bold"
             android:textSize="30sp"
             android:textColor="#4b4d4a"
-            android:text="Prokofich"
             app:layout_constraintWidth_percent="0.9"
             app:layout_constraintHeight_percent="0.3"
             app:layout_constraintBottom_toTopOf="@id/id_fragment_2_tv_mail"
@@ -57,7 +55,6 @@
             android:textStyle="italic|bold"
             android:textSize="17sp"
             android:textColor="#4b4d4a"
-            android:text="prokofich777@mail.ru"
             app:layout_constraintWidth_percent="0.9"
             app:layout_constraintHeight_percent="0.2"
             android:id="@+id/id_fragment_2_tv_mail"
@@ -80,7 +77,6 @@
         android:textStyle="italic"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@id/id_fragment_2_tv_suite"
-        android:text="Street: fdgdfgdfgd"
         android:textSize="17sp"
         app:layout_constraintTop_toBottomOf="@id/id_fragment_2_cs_1"
         android:layout_height="0dp"
@@ -96,7 +92,6 @@
         android:background="@drawable/background_tv_1"
         android:textStyle="italic"
         android:textColor="@color/white"
-        android:text="Suite: dpofgidfpogi"
         app:layout_constraintBottom_toTopOf="@id/id_fragment_2_tv_city"
         android:id="@+id/id_fragment_2_tv_suite"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +109,6 @@
         android:textSize="17sp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
-        android:text="City: pfdgldfgdfg"
         android:gravity="center|start"
         app:layout_constraintBottom_toTopOf="@id/id_fragment_2_tv_zipcode"
         android:id="@+id/id_fragment_2_tv_city"
@@ -128,7 +122,7 @@
     <TextView
         android:layout_width="0dp"
         android:gravity="center|start"
-        android:text="zipcode: dfgdfgdfg"
+
         android:textSize="17sp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
@@ -147,7 +141,6 @@
     <TextView
         android:layout_width="0dp"
         android:gravity="center|start"
-        android:text="Geo lat: dfgdfgdfg"
         android:textSize="17sp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
@@ -166,7 +159,6 @@
     <TextView
         android:layout_width="0dp"
         android:gravity="center|start"
-        android:text="Geo lng: dfgdfgdfg"
         android:textSize="17sp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
@@ -185,7 +177,6 @@
     <TextView
         android:layout_width="0dp"
         android:gravity="center|start"
-        android:text="Phone: dfgdfgdfg"
         android:textSize="17sp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
@@ -204,7 +195,6 @@
     <TextView
         android:layout_width="0dp"
         android:gravity="center|start"
-        android:text="Website: dfgdfgdfg"
         android:textSize="17sp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
@@ -223,7 +213,6 @@
     <TextView
         android:layout_width="0dp"
         android:gravity="center|start"
-        android:text="Name company: dfgdfgdfg"
         android:textSize="17sp"
         android:textColor="@color/white"
         android:textStyle="italic"
@@ -242,7 +231,6 @@
     <TextView
         android:layout_width="0dp"
         android:gravity="center|start"
-        android:text="Catchphrase: dfgdfgdfg"
         android:textSize="17sp"
         android:textColor="@color/white"
         android:textStyle="italic"
@@ -261,7 +249,6 @@
     <TextView
         android:layout_width="0dp"
         android:gravity="center|start"
-        android:text="Company bs: dfgdfgdfg"
         android:textSize="17sp"
         android:textColor="@color/white"
         android:textStyle="italic"

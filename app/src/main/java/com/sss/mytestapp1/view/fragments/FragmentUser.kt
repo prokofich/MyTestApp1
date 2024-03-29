@@ -1,6 +1,5 @@
 package com.sss.mytestapp1.view.fragments
 
-import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -26,7 +25,6 @@ class FragmentUser : Fragment() {
         return binding?.root
     }
 
-    @SuppressLint("SetTextI18n")
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -37,20 +35,20 @@ class FragmentUser : Fragment() {
         binding?.idFragment2TvUsername?.text = user?.username
         binding?.idFragment2TvMail?.text = user?.email
 
-        binding?.idFragment2TvStreet?.text = "Street: ${user?.address?.street}"
-        binding?.idFragment2TvSuite?.text = "Suite: ${user?.address?.suite}"
-        binding?.idFragment2TvCity?.text = "City: ${user?.address?.city}"
-        binding?.idFragment2TvZipcode?.text = "Zipcode : ${user?.address?.zipcode}"
+        binding?.idFragment2TvStreet?.text = getString(R.string.street, user?.address?.street)
+        binding?.idFragment2TvSuite?.text = getString(R.string.suite, user?.address?.suite)
+        binding?.idFragment2TvCity?.text = getString(R.string.city, user?.address?.city)
+        binding?.idFragment2TvZipcode?.text = getString(R.string.zipcode, user?.address?.zipcode)
 
-        binding?.idFragment2TvGeolat?.text = "Geo lat : ${user?.address?.geo?.lat}"
-        binding?.idFragment2TvGeolng?.text = "Geo lng : ${user?.address?.geo?.lng}"
+        binding?.idFragment2TvGeolat?.text = getString(R.string.geoLat, user?.address?.geo?.lat)
+        binding?.idFragment2TvGeolng?.text = getString(R.string.geoLng, user?.address?.geo?.lng)
 
-        binding?.idFragment2TvPhone?.text = "Phone : ${user?.phone}"
-        binding?.idFragment2TvWebsite?.text = "Website : ${user?.website}"
+        binding?.idFragment2TvPhone?.text = getString(R.string.phone, user?.phone)
+        binding?.idFragment2TvWebsite?.text = getString(R.string.website, user?.website)
 
-        binding?.idFragment2TvNameCompany?.text = "Name company : ${user?.company?.name}"
-        binding?.idFragment2TvCatchPhrase?.text = "Catchphrase : ${user?.company?.catchPhrase}"
-        binding?.idFragment2TvCompanyBs?.text = "Company bs: ${user?.company?.bs}"
+        binding?.idFragment2TvNameCompany?.text = getString(R.string.nameCompany, user?.company?.name)
+        binding?.idFragment2TvCatchPhrase?.text = getString(R.string.catchphrase, user?.company?.catchPhrase)
+        binding?.idFragment2TvCompanyBs?.text = getString(R.string.companyBs, user?.company?.bs)
 
         binding?.idFragment2ButtonBack?.setOnClickListener {
             MAIN?.navController?.navigate(R.id.action_fragmentUser_to_fragmentUsersAndVideo)

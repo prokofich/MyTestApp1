@@ -13,7 +13,7 @@ import retrofit2.Response
 class UsersViewModel:ViewModel() {
 
     private val repository = Repository()
-    var users: MutableLiveData<Response<User>> = MutableLiveData()
+    val users: MutableLiveData<Response<User>> = MutableLiveData()
 
     fun getUsers(){
         viewModelScope.launch(Dispatchers.IO) {

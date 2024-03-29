@@ -1,12 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MyTestApp1</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="nameCompany">Name company : %1$s</string>
     <string name="catchphrase">Catchphrase : %1$s</string>
     <string name="companyBs">Company bs: %1$s</string>
+    <string name="geoLng">Geo lng : %1$s</string>
     <string name="website">Website : %1$s</string>
     <string name="phone">Phone : %1$s</string>
-    <string name="geoLng">Geo lng : %1$s</string>
     <string name="geoLat">Geo lat : %1$s</string>
     <string name="street">Street: %1$s</string>
     <string name="suite">Suite: %1$s</string>
